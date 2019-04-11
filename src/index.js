@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { useEffect } from 'react';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default function useEvent(event, handler, passive=false) {
+  useEffect(() => {
+    // initiate the event handler
+    window.addEventListener(event, handler, passive);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+    // this will clean up the event every time the component is re-rendered
+    return function cleanup() {
+      window.removeEventListener(event, handler);
+    };
+  });
+}

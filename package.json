@@ -1,7 +1,24 @@
 {
   "name": "use-event",
   "version": "0.1.0",
+  "description": "Positional based animations for react made simple and easy, just supply coordinates.",
+  "main": "build/index.js",
   "private": true,
+  "author": "Will Mayger",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WillMayger/use-event.git"
+  },
+  "keywords": [
+    "React Hooks",
+    "useEvent",
+    "addEventListener",
+    "React",
+    "JavaScript",
+    "js",
+    "ES6"
+  ],
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
