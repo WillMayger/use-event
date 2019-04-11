@@ -7,10 +7,10 @@ You use it in exactly the same way as `window.addEventListener()`.
 ## Install
 
 Yarn:
-`yarn add use-event`
+`yarn add use-add-event`
 
 NPM:
-`npm install --save use-event`
+`npm install --save use-add-event`
 
 ## Usage
 
@@ -22,7 +22,7 @@ useCapture: BOOL - determining passive event or not (defaults to false).
 
 Example:
 ```
-import useEvent from 'use-event';
+import useEvent from 'use-add-event';
 
 export default function MyComponent() {
   const handleResize = (e) => { ... };
