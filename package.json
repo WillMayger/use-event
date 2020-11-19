@@ -1,7 +1,7 @@
 {
   "name": "use-add-event",
-  "version": "0.1.1",
-  "description": "Positional based animations for react made simple and easy, just supply coordinates.",
+  "version": "1.0.0",
+  "description": "This replaces the need for using window.addEventListener() when using react hooks.",
   "main": "build/index.js",
   "author": "Will Mayger",
   "license": "ISC",
@@ -18,18 +18,16 @@
     "js",
     "ES6"
   ],
-  "peerDependencies": {
-    "react": "^16.8.6"
-  },
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack"
   },
-  "dependencies": {
-    "react": "^16.8.6",
-    "webpack": "^4.29.6"
+  "peerDependencies": {
+    "react": "^16.8.6"
   },
+  "dependencies": {},
   "devDependencies": {
+    "webpack": "^4.29.6",
     "babel-core": "^6.26.3",
     "babel-loader": "7",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
